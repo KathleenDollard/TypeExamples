@@ -16,4 +16,8 @@
 	  <Folder Include="output\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\TypeExamples\TypeExamples.csproj" />
+	</ItemGroup>
+
 </Project>

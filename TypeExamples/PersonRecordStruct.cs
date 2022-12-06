@@ -1,11 +1,11 @@
 ﻿namespace TypeExamples
 {
-    public struct PersonStruct
+    public record struct PersonRecordStruct
     {
-        public required string GivenName;
-        public required string SurName;
+        public string GivenName;
+        public string SurName;
 
-        public static PersonStruct CreateTest()
+        public static PersonRecordStruct CreateTest()
             => new()
             {
                 GivenName = "John",

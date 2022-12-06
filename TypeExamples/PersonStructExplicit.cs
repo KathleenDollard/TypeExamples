@@ -1,9 +1,18 @@
-﻿namespace TypeExamples
+﻿using System;
+
+namespace TypeExamples
 {
     public struct PersonStructExplicit : IEquatable<PersonStructExplicit>
     {
-        public required string GivenName;
-        public required string SurName;
+        public string GivenName;
+        public string SurName;
+
+        public static PersonStructExplicit CreateTest()
+            => new()
+            {
+                GivenName = "John",
+                SurName = "Smith"
+            };
 
         public override bool Equals(object? obj)
         {
