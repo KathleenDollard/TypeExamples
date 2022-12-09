@@ -8,8 +8,8 @@
         public static PersonRecord CreateTest()
             => new()
             {
-                GivenName = "John",
-                SurName = "Smith"
+                GivenName = DateTime.Now.Month.ToString(),
+                SurName = DateTime.Now.Year.ToString()
             };
     }
 }

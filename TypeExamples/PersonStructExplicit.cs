@@ -10,8 +10,8 @@ namespace TypeExamples
         public static PersonStructExplicit CreateTest()
             => new()
             {
-                GivenName = "John",
-                SurName = "Smith"
+                GivenName = DateTime.Now.Month.ToString(),
+                SurName = DateTime.Now.Year.ToString()
             };
 
         public override bool Equals(object? obj)
