@@ -14,11 +14,11 @@ namespace TypeExamples.Test
         {
             var eqData = new Equality();
             // Change these to be either Assert.True or Assert.False
-            //Assert.Fail(eqData.PersonClass1.Equals(eqData.PersonClass2));
-            //Assert.Fail(eqData.PersonStruct1.Equals(eqData.PersonStruct2));
-            //Assert.Fail(eqData.PersonStructExplicit1.Equals(eqData.PersonStructExplicit2));
-            //Assert.Fail(eqData.PersonRecord1.Equals(eqData.PersonRecord2));
-            //Assert.Fail(eqData.PersonRecordStruct1.Equals(eqData.PersonRecordStruct2));
+            Assert.False(eqData.PersonClass1.Equals(eqData.PersonClass2));
+            Assert.True(eqData.PersonStruct1.Equals(eqData.PersonStruct2));
+            Assert.True(eqData.PersonStructExplicit1.Equals(eqData.PersonStructExplicit2));
+            Assert.True(eqData.PersonRecord1.Equals(eqData.PersonRecord2));
+            Assert.True(eqData.PersonRecordStruct1.Equals(eqData.PersonRecordStruct2));
         }
     }
 }

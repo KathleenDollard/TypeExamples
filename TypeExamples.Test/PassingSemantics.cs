@@ -13,7 +13,7 @@ namespace TypeExamples.Test
             var personClass = PersonClass.CreateTest();
             MakeChangeClass(personClass);
             // Uncomment the following and Assert.Equal or Assert.NotEqual
-            //Assert.Fail("John", personClass.GivenName);
+            Assert.NotEqual("John", personClass.GivenName);
 
             static void MakeChangeClass(PersonClass person) => person.GivenName = "Joe";
         }
@@ -24,7 +24,7 @@ namespace TypeExamples.Test
             var personStruct = PersonStruct.CreateTest();
             MakeChangeStruct(personStruct);
             // Uncomment the following and Assert.Equal or Assert.NotEqual
-            //Assert.Fail("John", personStruct.GivenName);
+            Assert.NotEqual("John", personStruct.GivenName);
 
             static void MakeChangeStruct(PersonStruct person) => person.GivenName = "Joe";
         }
@@ -35,7 +35,7 @@ namespace TypeExamples.Test
             var personRecord = PersonRecord.CreateTest();
             MakeChangeRecord(personRecord);
             // Uncomment the following and Assert.Equal or Assert.NotEqual
-            //Assert.Fail("John", personRecord.GivenName);
+            Assert.NotEqual("John", personRecord.GivenName);
 
             static void MakeChangeRecord(PersonRecord person) => person.GivenName = "Joe";
         }
@@ -47,7 +47,7 @@ namespace TypeExamples.Test
             var personRecordStruct = PersonRecordStruct.CreateTest();
             MakeChangeRecordStruct(personRecordStruct);
             // Uncomment the following and Assert.Equal or Assert.NotEqual
-            //Assert.Fail("John", personRecordStruct.GivenName);
+            Assert.NotEqual("John", personRecordStruct.GivenName);
 
             static void MakeChangeRecordStruct(PersonRecordStruct person) => person.GivenName = "Joe";
         }
